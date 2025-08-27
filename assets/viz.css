@@ -1,0 +1,12 @@
+#viz-root svg { width: 100%; height: 100%; display: block; }
+.link { stroke: #bbb; stroke-opacity: 0.6; }
+.link.relation { stroke-opacity: 0.8; }
+.link.compatibility { stroke: #16a34a; }
+.link.opposition { stroke: #dc2626; }
+.link.equivalence { stroke: #2563eb; }
+.node circle { stroke: #fff; stroke-width: 1.5px; }
+.node.category text { font-weight: 600; fill: #222; text-anchor: middle; dominant-baseline: middle; pointer-events: none; }
+.node.theory text { fill: #333; font-size: 10px; pointer-events: none; }
+.controls { margin-top: .5rem; }
+.tooltip { position: absolute; background: rgba(0,0,0,0.8); color: #fff; font-size: 12px; padding: 4px 6px; border-radius: 4px; pointer-events: none; opacity: 0; transition: opacity .15s ease; }
+
