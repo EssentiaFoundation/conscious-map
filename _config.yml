@@ -1,0 +1,18 @@
+title: Consciousness Theories
+description: Visual map and archive of consciousness theories
+# For GitHub Pages project site under EssentiaFoundation/conscious-map
+baseurl: "/conscious-map"
+url: "https://essentiafoundation.github.io"
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
+
+# Apply the default layout to all pages by default
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+

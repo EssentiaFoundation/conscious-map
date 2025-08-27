@@ -1,0 +1,445 @@
+{
+  "metadata": {
+    "schema_version": "1.0.0",
+    "generated_at": "2025-08-24T18:21:39Z",
+    "description": "Dataset of theories of consciousness, categories, and relations. Code: MIT. Data: CC BY 4.0.",
+    "licenses": {
+      "code": "MIT",
+      "data": "CC BY 4.0"
+    },
+    "sources": [
+      {
+        "name": "Essentia Foundation overview of 325+ theories",
+        "url": "https://www.essentiafoundation.org/all-325-competing-theories-of-consciousness-in-one-place/seeing/"
+      },
+      { "name": "Primary academic sources", "url": "" }
+    ]
+  },
+  "relation_types": [
+    { "id": "influence", "label": "Influence", "directed": true },
+    { "id": "compatibility", "label": "Compatibility", "directed": false },
+    { "id": "opposition", "label": "Opposition", "directed": false },
+    { "id": "equivalence", "label": "Equivalence/alias", "directed": false },
+    { "id": "belongs_to", "label": "Belongs to category", "directed": true }
+  ],
+  "categories": [
+    { "id": "materialist", "label": "Materialist", "color": "#3b82f6" },
+    { "id": "functional", "label": "Functionalist/Computational", "color": "#0ea5e9" },
+    { "id": "global-workspace", "label": "Global Workspace / Broadcast", "color": "#06b6d4" },
+    { "id": "iit", "label": "Integrated Information Theory", "color": "#22c55e" },
+    { "id": "higher-order", "label": "Higher-Order / Meta-Representational", "color": "#10b981" },
+    { "id": "predictive-processing", "label": "Predictive Processing / Bayesian Brain", "color": "#84cc16" },
+    { "id": "recurrent-processing", "label": "Recurrent/Local Processing", "color": "#eab308" },
+    { "id": "panpsychism", "label": "Panpsychism / Panexperientialism", "color": "#ef4444" },
+    { "id": "idealism", "label": "Idealism (including Analytic Idealism)", "color": "#a855f7" },
+    { "id": "dual-aspect", "label": "Dual-Aspect / Neutral Monism", "color": "#8b5cf6" },
+    { "id": "dualism", "label": "Dualism (Substance/Property)", "color": "#f97316" },
+    { "id": "illusionism", "label": "Illusionism / Eliminativism", "color": "#fb7185" },
+    { "id": "embodied", "label": "Embodied/Enactive/Extended", "color": "#64748b" },
+    { "id": "quantum", "label": "Quantum Approaches", "color": "#f59e0b" },
+    { "id": "others", "label": "Other / Miscellaneous", "color": "#9ca3af" }
+  ],
+  "theories": [
+    {
+      "id": "global-workspace",
+      "name": "Global Workspace Theory",
+      "aliases": ["GWT", "Global Neuronal Workspace (GNW)"],
+      "categoryIds": ["global-workspace", "functional"] ,
+      "proponents": ["Bernard Baars", "Stanislas Dehaene"],
+      "year": 1988,
+      "status": "active",
+      "summary": "Consciousness arises when information becomes globally available for broadcast to multiple cognitive systems (attention, memory, decision-making)",
+      "keywords": ["broadcast", "workspace", "attention", "reportability"],
+      "sources": [
+        { "label": "Baars (1988)", "url": "https://doi.org/10.1017/CBO9780511663896" },
+        { "label": "Dehaene (2014)", "url": "https://doi.org/10.7551/mitpress/9780262027348.001.0001" }
+      ]
+    },
+    {
+      "id": "iit-3",
+      "name": "Integrated Information Theory (IIT)",
+      "aliases": ["IIT 3.0", "IIT"],
+      "categoryIds": ["iit"],
+      "proponents": ["Giulio Tononi", "Christof Koch"],
+      "year": 2014,
+      "status": "active",
+      "summary": "Consciousness corresponds to the system's intrinsic causal power (Φ) structured as a conceptual complex; higher Φ implies richer experience.",
+      "keywords": ["phi", "information", "causal power", "exclusion"],
+      "sources": [
+        { "label": "Tononi (2014)", "url": "https://doi.org/10.1016/j.cogsys.2014.02.001" },
+        { "label": "Oizumi et al. (2014)", "url": "https://doi.org/10.1371/journal.pcbi.1003588" }
+      ]
+    },
+    {
+      "id": "higher-order-thought",
+      "name": "Higher-Order Thought Theory",
+      "aliases": ["HOT"],
+      "categoryIds": ["higher-order"],
+      "proponents": ["David Rosenthal"],
+      "year": 1990,
+      "status": "active",
+      "summary": "A mental state is conscious when it is accompanied by a suitable higher-order thought representing oneself as being in that state.",
+      "keywords": ["metacognition", "awareness", "representation"],
+      "sources": [
+        { "label": "Rosenthal (2005)", "url": "https://doi.org/10.1093/0199244641.001.0001" }
+      ]
+    },
+    {
+      "id": "higher-order-perception",
+      "name": "Higher-Order Perception Theory",
+      "aliases": ["HOP"],
+      "categoryIds": ["higher-order"],
+      "proponents": ["William G. Lycan"],
+      "year": 1996,
+      "status": "active",
+      "summary": "Consciousness consists in higher-order perceptual states that monitor first-order mental states.",
+      "keywords": ["monitoring", "meta-representation"],
+      "sources": [
+        { "label": "Lycan (1996)", "url": "https://doi.org/10.7551/mitpress/9780262621096.001.0001" }
+      ]
+    },
+    {
+      "id": "recurrent-processing",
+      "name": "Recurrent Processing Theory",
+      "aliases": ["RPT"],
+      "categoryIds": ["recurrent-processing"],
+      "proponents": ["Victor Lamme"],
+      "year": 2006,
+      "status": "active",
+      "summary": "Phenomenal consciousness can arise from local recurrent processing in sensory cortex without global broadcast.",
+      "keywords": ["reentry", "feedback", "phenomenal consciousness"],
+      "sources": [
+        { "label": "Lamme (2006)", "url": "https://doi.org/10.1016/j.tics.2006.05.006" }
+      ]
+    },
+    {
+      "id": "predictive-processing",
+      "name": "Predictive Processing / Bayesian Brain",
+      "aliases": ["PP", "Free Energy Principle (as framework)"],
+      "categoryIds": ["predictive-processing", "functional"] ,
+      "proponents": ["Karl Friston", "Andy Clark", "Jakob Hohwy"],
+      "year": 2010,
+      "status": "active",
+      "summary": "The brain maintains a hierarchical generative model minimizing prediction error/free energy; consciousness relates to precision-weighting and global inference dynamics.",
+      "keywords": ["free energy", "prediction error", "precision"],
+      "sources": [
+        { "label": "Friston (2010)", "url": "https://doi.org/10.3389/fnhum.2010.00034" },
+        { "label": "Clark (2013)", "url": "https://doi.org/10.1017/S0140525X12000477" }
+      ]
+    },
+    {
+      "id": "illusionism",
+      "name": "Illusionism",
+      "aliases": [],
+      "categoryIds": ["illusionism"],
+      "proponents": ["Keith Frankish"],
+      "year": 2016,
+      "status": "active",
+      "summary": "There are no phenomenal properties as commonly conceived; our sense of phenomenal consciousness is a cognitive construct or illusion.",
+      "keywords": ["phenomenality", "cognitive model", "eliminativism"],
+      "sources": [
+        { "label": "Frankish (2016)", "url": "https://doi.org/10.1111/phc3.12331" }
+      ]
+    },
+    {
+      "id": "analytic-idealism",
+      "name": "Analytic Idealism",
+      "aliases": [],
+      "categoryIds": ["idealism"],
+      "proponents": ["Bernardo Kastrup"],
+      "year": 2019,
+      "status": "active",
+      "summary": "Reality is fundamentally mental; individual minds are dissociated alters of a universal mind; physical world is appearance within mind.",
+      "keywords": ["idealism", "metaphysics", "mind-only"],
+      "sources": [
+        { "label": "Kastrup (2019)", "url": "https://doi.org/10.1007/978-3-030-16521-7" }
+      ]
+    },
+    {
+      "id": "panpsychism",
+      "name": "Panpsychism",
+      "aliases": ["Russellian monism (some forms)", "Panexperientialism"],
+      "categoryIds": ["panpsychism", "dual-aspect"],
+      "proponents": ["Galen Strawson", "Philip Goff", "David Chalmers (sympathetic)"],
+      "year": 2006,
+      "status": "active",
+      "summary": "Consciousness is a fundamental and ubiquitous feature of the physical world, present in basic constituents and combining in higher-level systems.",
+      "keywords": ["fundamental", "combination problem", "intrinsic nature"],
+      "sources": [
+        { "label": "Goff (2017)", "url": "https://doi.org/10.1093/oso/9780190677015.001.0001" }
+      ]
+    },
+    {
+      "id": "dual-aspect-monism",
+      "name": "Dual-Aspect Monism / Neutral Monism",
+      "aliases": ["Dual-aspect", "Neutral monism"],
+      "categoryIds": ["dual-aspect"],
+      "proponents": ["Baruch Spinoza", "Bertrand Russell", "Wolf Singer"],
+      "year": 1927,
+      "status": "active",
+      "summary": "Mind and matter are two aspects of a single, underlying neutral reality; neither reduces to the other.",
+      "keywords": ["aspects", "neutral basis", "non-reductive"],
+      "sources": [
+        { "label": "Russell (1927)", "url": "https://archive.org/details/in.ernet.dli.2015.218184" }
+      ]
+    },
+    {
+      "id": "property-dualism",
+      "name": "Property Dualism",
+      "aliases": [],
+      "categoryIds": ["dualism"],
+      "proponents": ["David Chalmers"],
+      "year": 1996,
+      "status": "active",
+      "summary": "Conscious properties are non-physical properties of physical substances; not reducible to physical explanations.",
+      "keywords": ["non-reductive", "explanatory gap"],
+      "sources": [
+        { "label": "Chalmers (1996)", "url": "https://doi.org/10.1093/0195117891.001.0001" }
+      ]
+    },
+    {
+      "id": "cartesian-dualism",
+      "name": "Substance Dualism",
+      "aliases": ["Cartesian Dualism"],
+      "categoryIds": ["dualism"],
+      "proponents": ["René Descartes"],
+      "year": 1641,
+      "status": "historical",
+      "summary": "Mind and body are distinct substances; consciousness resides in a non-physical soul interacting with the body.",
+      "keywords": ["res cogitans", "interaction problem"],
+      "sources": [
+        { "label": "Descartes (1641)", "url": "https://www.gutenberg.org/ebooks/23306" }
+      ]
+    },
+    {
+      "id": "higher-integrated",
+      "name": "Higher-Order + Integrated (Hybrid)",
+      "aliases": [],
+      "categoryIds": ["higher-order", "iit"],
+      "proponents": [],
+      "year": 2020,
+      "status": "speculative",
+      "summary": "Hybrid view combining integrated information with metarepresentational access for reportable consciousness.",
+      "keywords": ["hybrid", "access", "integration"],
+      "sources": []
+    },
+    {
+      "id": "quantum-orch-or",
+      "name": "Orchestrated Objective Reduction (Orch-OR)",
+      "aliases": ["Orch-OR"],
+      "categoryIds": ["quantum"],
+      "proponents": ["Roger Penrose", "Stuart Hameroff"],
+      "year": 1994,
+      "status": "controversial",
+      "summary": "Quantum computations in microtubules undergo objective reductions that give rise to conscious moments.",
+      "keywords": ["microtubules", "quantum gravity"],
+      "sources": [
+        { "label": "Hameroff & Penrose (2014)", "url": "https://doi.org/10.1016/j.pbiomolbio.2014.08.002" }
+      ]
+    },
+    {
+      "id": "attention-schema",
+      "name": "Attention Schema Theory",
+      "aliases": ["AST"],
+      "categoryIds": ["functional", "embodied"],
+      "proponents": ["Michael Graziano"],
+      "year": 2013,
+      "status": "active",
+      "summary": "The brain constructs a simplified model (schema) of its own attention processes; this model underlies reports of subjective awareness.",
+      "keywords": ["attention", "schema", "self-model"],
+      "sources": [
+        { "label": "Graziano (2013)", "url": "https://doi.org/10.1016/j.cub.2013.05.022" }
+      ]
+    },
+    {
+      "id": "higher-global",
+      "name": "Higher-Order + Global Workspace (Hybrid)",
+      "aliases": [],
+      "categoryIds": ["higher-order", "global-workspace"],
+      "proponents": [],
+      "year": 2018,
+      "status": "speculative",
+      "summary": "Phenomenal consciousness requires both global availability and higher-order representation.",
+      "keywords": ["hybrid", "reportability", "metacognition"],
+      "sources": []
+    },
+    {
+      "id": "first-order-representationalism",
+      "name": "First-Order Representationalism",
+      "aliases": ["FOR"],
+      "categoryIds": ["materialist"],
+      "proponents": ["Fred Dretske", "Michael Tye"],
+      "year": 1990,
+      "status": "active",
+      "summary": "Consciousness consists in first-order representational states with the right functional/teleological roles.",
+      "keywords": ["representation", "intentionality"],
+      "sources": [
+        { "label": "Tye (1995)", "url": "https://doi.org/10.7551/mitpress/5850.001.0001" }
+      ]
+    },
+    {
+      "id": "higher-sensory",
+      "name": "Higher-Order Sensory / SOMA",
+      "aliases": ["SOMA"],
+      "categoryIds": ["higher-order"],
+      "proponents": ["Hakwan Lau", "Rafi Malach"],
+      "year": 2017,
+      "status": "active",
+      "summary": "Consciousness depends on higher-order sensory representations (esp. in prefrontal cortex) that categorize first-order states.",
+      "keywords": ["PFC", "metacognition"],
+      "sources": [
+        { "label": "Lau & Rosenthal (2011)", "url": "https://doi.org/10.1093/acprof:oso/9780199591565.003.0013" }
+      ]
+    },
+    {
+      "id": "local-recurrence",
+      "name": "Local Recurrence Without Broadcast",
+      "aliases": [],
+      "categoryIds": ["recurrent-processing"],
+      "proponents": ["Victor Lamme"],
+      "year": 2018,
+      "status": "active",
+      "summary": "Emphasizes sufficiency of local recurrent loops in sensory areas for phenomenal experience, separating access consciousness.",
+      "keywords": ["phenomenal/access", "local loops"],
+      "sources": []
+    },
+    {
+      "id": "embodied-enactive",
+      "name": "Embodied/Enactive Cognition",
+      "aliases": ["4E Cognition"],
+      "categoryIds": ["embodied"],
+      "proponents": ["Francisco Varela", "Evan Thompson", "Alva Noë"],
+      "year": 1991,
+      "status": "active",
+      "summary": "Cognition and consciousness are constituted through embodied action and sensorimotor contingencies, extended into environment.",
+      "keywords": ["sensorimotor", "enactivism", "extended mind"],
+      "sources": [
+        { "label": "Varela et al. (1991)", "url": "https://doi.org/10.7551/mitpress/11046.001.0001" }
+      ]
+    },
+    {
+      "id": "predictive-global",
+      "name": "Predictive Global Workspace (Hybrid)",
+      "aliases": [],
+      "categoryIds": ["predictive-processing", "global-workspace"],
+      "proponents": [],
+      "year": 2021,
+      "status": "speculative",
+      "summary": "Global broadcast emerges from precision-weighted prediction-error routing across hierarchies.",
+      "keywords": ["precision", "broadcast"],
+      "sources": []
+    },
+    {
+      "id": "attention-based",
+      "name": "Attention-based Consciousness",
+      "aliases": [],
+      "categoryIds": ["functional"],
+      "proponents": ["Jesse Prinz"],
+      "year": 2012,
+      "status": "active",
+      "summary": "Consciousness arises when attended intermediate-level representations are available for working memory and report.",
+      "keywords": ["AIR theory", "attention", "intermediate representations"],
+      "sources": [
+        { "label": "Prinz (2012)", "url": "https://global.oup.com/academic/product/the-conscious-brain-9780195314595" }
+      ]
+    },
+    {
+      "id": "self-model",
+      "name": "Self-Model Theory of Subjectivity",
+      "aliases": ["SMT"],
+      "categoryIds": ["functional", "embodied"],
+      "proponents": ["Thomas Metzinger"],
+      "year": 2003,
+      "status": "active",
+      "summary": "A phenomenal self-model (PSM) integrates bodily and cognitive information; transparency of the model yields the sense of self.",
+      "keywords": ["PSM", "phenomenal self", "transparency"],
+      "sources": [
+        { "label": "Metzinger (2003)", "url": "https://mitpress.mit.edu/9780262633082/being-no-one/" }
+      ]
+    },
+    {
+      "id": "biological-naturalism",
+      "name": "Biological Naturalism",
+      "aliases": [],
+      "categoryIds": ["materialist"],
+      "proponents": ["John Searle"],
+      "year": 1992,
+      "status": "active",
+      "summary": "Consciousness is a real, irreducible biological phenomenon caused by neurobiological processes but not reducible to computational or functional descriptions.",
+      "keywords": ["biological", "non-reductive"],
+      "sources": [
+        { "label": "Searle (1992)", "url": "https://global.oup.com/academic/product/the-rediscovery-of-the-mind-9780262691549" }
+      ]
+    },
+    {
+      "id": "representational-higher",
+      "name": "Representational Higher-Order (Comparator)",
+      "aliases": ["Comparator models"],
+      "categoryIds": ["higher-order"],
+      "proponents": ["Tim Bayne", "Peter Carruthers"],
+      "year": 2007,
+      "status": "active",
+      "summary": "Comparator mechanisms evaluate representations for report and control, implementing higher-order awareness functionally.",
+      "keywords": ["comparator", "report"],
+      "sources": []
+    },
+    {
+      "id": "global-neuronal-workspace",
+      "name": "Global Neuronal Workspace",
+      "aliases": ["GNW"],
+      "categoryIds": ["global-workspace"],
+      "proponents": ["Stanislas Dehaene", "Jean-Pierre Changeux"],
+      "year": 1998,
+      "status": "active",
+      "summary": "A specialized set of long-range neurons enables ignition and sustained broadcasting, correlating with conscious access.",
+      "keywords": ["ignition", "P3", "broadcast"],
+      "sources": [
+        { "label": "Dehaene & Changeux (2011)", "url": "https://doi.org/10.1146/annurev-neuro-062111-150318" }
+      ]
+    },
+    {
+      "id": "higher-order-bayes",
+      "name": "Metacognitive Bayesian Observer",
+      "aliases": [],
+      "categoryIds": ["higher-order", "predictive-processing"],
+      "proponents": ["Stephen Fleming"],
+      "year": 2015,
+      "status": "active",
+      "summary": "Confidence and awareness arise from hierarchical Bayesian inference about one’s own perceptual states.",
+      "keywords": ["confidence", "metacognition"],
+      "sources": []
+    },
+    {
+      "id": "quantum-many-worlds",
+      "name": "Quantum Many-Worlds Consciousness",
+      "aliases": [],
+      "categoryIds": ["quantum"],
+      "proponents": ["David Deutsch"],
+      "year": 1997,
+      "status": "speculative",
+      "summary": "Some proposals link branching in many-worlds to decoherence and subjective experience; not mainstream.",
+      "keywords": ["decoherence", "branching"],
+      "sources": []
+    },
+    {
+      "id": "cosmopsychism",
+      "name": "Cosmopsychism",
+      "aliases": [],
+      "categoryIds": ["panpsychism", "idealism"],
+      "proponents": ["Hedda Hassel Mørch", "Philip Goff"],
+      "year": 2014,
+      "status": "active",
+      "summary": "The universe as a whole is conscious; individual minds derive from the cosmos’s consciousness (decomposition problem instead of combination problem).",
+      "keywords": ["cosmic mind", "decomposition"],
+      "sources": []
+    }
+  ],
+  "relations": [
+    { "source": "global-workspace", "target": "global-neuronal-workspace", "type": "equivalence", "notes": "GNW is a neural implementation of GWT." },
+    { "source": "global-workspace", "target": "recurrent-processing", "type": "opposition", "notes": "RPT argues local recurrence can be sufficient without global broadcast." },
+    { "source": "iit-3", "target": "global-workspace", "type": "compatibility", "notes": "Some suggest IIT structure may underlie or complement global access." },
+    { "source": "illusionism", "target": "analytic-idealism", "type": "opposition", "notes": "Illusionism denies phenomenal properties, in tension with idealist claims." },
+    { "source": "panpsychism", "target": "dual-aspect-monism", "type": "compatibility", "notes": "Some dual-aspect views overlap with panpsychist commitments." }
+  ]
+}
+

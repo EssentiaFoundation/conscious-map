@@ -1,0 +1,9 @@
+# Build artifacts
+_site/
+
+# OS
+.DS_Store
+
+# Safety for prior nested repo backup
+/theories/.git.bak
+

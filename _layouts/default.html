@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ site.description }}" />
+    <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}" />
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({ startOnLoad: true, theme: 'default' });</script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+        <nav class="nav">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ '/theories/' | relative_url }}">Theories</a>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      {{ content }}
+    </main>
+    <footer class="site-footer container">
+      <p>Data: CC BY 4.0 · Code: MIT · {{ site.title }}</p>
+    </footer>
+  </body>
+</html>
+
