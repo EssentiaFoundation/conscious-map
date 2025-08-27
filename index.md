@@ -11,9 +11,9 @@ title: Home
 
 # Relations
 
-{% capture relmd %}{% include_relative relation.md %}{% endcapture %}
+{% capture relmap %}{% include_relative relations.mmd %}{% endcapture %}
 <div class="mermaid">
-{{ relmd | replace: '```mermaid','' | replace: '```','' | strip }}
+{{ relmap | strip }}
 </div>
 
 # Browse theories
