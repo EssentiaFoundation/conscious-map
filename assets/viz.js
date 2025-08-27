@@ -1,9 +1,12 @@
+---
+---
 // D3 force-directed visual map of categories and theories
 // - categories = large fixed bubbles arranged around a circle
 // - theories = smaller bubbles pulled toward their primary category
 // - links: belongs_to (theory->category) always shown; relation links toggle
 
-const dataUrl = new URL("{{ '/data/theories.json' | relative_url }}", window.location.origin);
+// Jekyll will interpolate the Liquid tag below because this file has front matter.
+const dataUrl = "{{ '/data/theories.json' | relative_url }}";
 
 const rootEl = document.getElementById('viz-root');
 const width = rootEl.clientWidth;
@@ -17,7 +20,9 @@ svg.call(d3.zoom().scaleExtent([0.2, 4]).on('zoom', (ev) => g.attr('transform', 
 
 const tooltip = d3.select('body').append('div').attr('class', 'tooltip');
 
-fetch(dataUrl).then(r => r.json()).then(model => {
+fetch(dataUrl)
+  .then(r => { if (!r.ok) throw new Error(`Failed to load data: ${r.status}`); return r.json(); })
+  .then(model => {
   const categories = model.categories || [];
   const theories = model.theories || [];
   const relations = model.relations || [];
